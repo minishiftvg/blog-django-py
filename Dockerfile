@@ -17,6 +17,7 @@ ENV S2I_SCRIPTS_PATH=/usr/libexec/s2i \
     S2I_BASH_ENV=/opt/app-root/etc/scl_enable \
     DISABLE_COLLECTSTATIC=1 \
     DISABLE_MIGRATE=1
+    HTTP_PROXY=no
 
 RUN /tmp/scripts/assemble
 
